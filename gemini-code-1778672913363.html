@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syah Farm - Koleksi Ayam Hias Kelas Dunia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root { --primary-red: #B22222; --gold: #D4AF37; --dark-gold: #996515; --white: #FFFFFF; --black-accent: #1a1a1a; }
+        body { font-family: 'Montserrat', sans-serif; color: #333; background-color: #fcfcfc; }
+        h1, h2, h3, .navbar-brand { font-family: 'Playfair Display', serif; }
+
+        /* Navbar */
+        .navbar { background-color: var(--white); border-bottom: 3px solid var(--gold); padding: 1rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar-brand { font-weight: 900; color: var(--primary-red) !important; font-size: 1.8rem; }
+        .nav-link { font-weight: 600; color: var(--black-accent) !important; text-transform: uppercase; margin: 0 10px; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--gold) !important; }
+
+        /* Hero */
+        .hero { background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(178, 34, 34, 0.4)), url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center; height: 80vh; display: flex; align-items: center; color: var(--white); }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; margin-bottom: 1.5rem; }
+        
+        /* Buttons */
+        .btn-gold { background: linear-gradient(45deg, var(--gold), var(--dark-gold)); color: white !important; border: none; padding: 12px 35px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.4s; border-radius: 0; }
+        .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4); }
+
+        /* Sections General */
+        section { padding: 100px 0; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: 2.8rem; color: var(--primary-red); position: relative; padding-bottom: 20px; font-weight: 700; }
+        .section-title h2::after { content: ''; width: 70px; height: 4px; background: var(--gold); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+
+        /* Highlights Card */
+        .product-card { border: none; border-radius: 0; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.4s; background: #fff; height: 100%; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+        .product-card img { height: 600px; object-fit: cover; border-bottom: 4px solid var(--gold); }
+        .product-category { color: var(--gold); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Contact Section */
+        .contact-section { background: linear-gradient(135deg, var(--primary-red) 0%, #7c0a0a 100%); color: white; }
+        .map-container { border: 5px solid var(--gold); height: 400px; }
+
+        footer { background: var(--black-accent); color: #fff; padding: 40px 0; text-align: center; border-top: 4px solid var(--gold); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SYAH FARM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="katalog.html">Katalog Koleksi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container text-center text-lg-start">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-3">Kemurnian Genetik Dalam Balutan Kemewahan</h1>
+                    <p class="lead mb-4">Menghadirkan standar baru keindahan ayam hias internasional langsung ke hunian Anda.</p>
+                    <a href="katalog.html" class="btn btn-gold">Eksplorasi Koleksi</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="highlight">
+        <div class="container">
+            <div class="section-title">
+                <h2>Koleksi Mahakarya</h2>
+                <p>Highlight varietas unggulan dengan kualitas display kontes.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="product-card card">
+                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=600" class="card-img-top" alt="Brahma">
+                        <div class="card-body p-4">
+                            <span class="product-category">Elite Class</span>
+                            <h4 class="card-title my-2">Brahma Blue Porcelain</h4>
+                            <p class="card-text text-muted small">Raja ayam hias dengan postur raksasa dan pola warna yang sangat langka.</p>
+                            <a href="katalog.html" class="btn btn-outline-dark btn-sm rounded-0">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card card">
+                        <img src="https://images.unsplash.com/photo-1623000850233-066347348967?q=80&w=600" class="card-img-top" alt="Onagadori">
+                        <div class="card-body p-4">
+                            <span class="product-category">Japanese Heritage</span>
+                            <h4 class="card-title my-2">Onagadori Phoenix</h4>
+                            <p class="card-text text-muted small">Ekor panjang yang menjuntai indah sebagai simbol kemakmuran dan seni hidup.</p>
+                            <a href="katalog.html" class="btn btn-outline-dark btn-sm rounded-0">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card card">
+                        <img src="https://images.unsplash.com/photo-1598251323379-880295da970a?q=80&w=600" class="card-img-top" alt="Poland">
+                        <div class="card-body p-4">
+                            <span class="product-category">Display Artist</span>
+                            <h4 class="card-title my-2">Silver Polish</h4>
+                            <p class="card-text text-muted small">Mahkota jambul yang ikonik menjadikannya primadona di setiap pekarangan mewah.</p>
+                            <a href="katalog.html" class="btn btn-outline-dark btn-sm rounded-0">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="katalog.html" class="text-decoration-none fw-bold" style="color: var(--primary-red);">Lihat Semua Koleksi <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <h2 class="display-5 mb-4">Hubungi Reservasi</h2>
+                    <p class="opacity-75 mb-4">Layanan kunjungan farm dan konsultasi pengiriman internasional tersedia setiap hari.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-white text-danger p-3 rounded-circle me-3"><i class="fab fa-whatsapp fa-2x"></i></div>
+                        <div>
+                            <h5 class="mb-0">WhatsApp Eksklusif</h5>
+                            <a href="https://wa.me/6281319193022" class="text-white fs-4 fw-bold text-decoration-none">0813 1919 3022</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="map-container shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126661.16664975765!2d108.13645369726562!3d-7.330310299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6154388e256b85%3A0xc395b0d0612c6a0!2sTasikmalaya%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1715500000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 SYAH FARM. Internasional Standard Quality.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
